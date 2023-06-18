@@ -1,0 +1,35 @@
+mysql> select * from employe;
++--------+------------+-------------+----------------+
+| Name   | employe_ID | employe_age | employe_salary |
++--------+------------+-------------+----------------+
+| Deepak |          1 |          21 |          21232 |
+| aditya |          2 |          22 |          12122 |
+| daman  |          3 |          19 |          30000 |
+| divyam |          4 |          23 |          23123 |
+| Deepak |          5 |          19 |          12000 |
++--------+------------+-------------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> select Name
+    -> from employe;
++--------+
+| Name   |
++--------+
+| Deepak |
+| aditya |
+| daman  |
+| divyam |
+| Deepak |
++--------+
+5 rows in set (0.00 sec)
+
+mysql> select Name
+    -> from employe
+    -> where Name = 'Deepak';
++--------+
+| Name   |
++--------+
+| Deepak |
+| Deepak |
++--------+
+2 rows in set (0.00 sec)

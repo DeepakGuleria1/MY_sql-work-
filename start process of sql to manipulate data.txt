@@ -11,7 +11,7 @@ owners.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-mysql> show databases;
+mysql> show databases;             -> show all exixting database
 +--------------------+
 | Database           |
 +--------------------+
@@ -22,9 +22,9 @@ mysql> show databases;
 +--------------------+
 4 rows in set (0.00 sec)
 
-mysql> use xyz_company;
+mysql> use xyz_company;             -> select particular database from set of all database
 Database changed
-mysql> show tables;
+mysql> show tables;                 -> show all the tables present in selcted database
 +-----------------------+
 | Tables_in_xyz_company |
 +-----------------------+
@@ -32,7 +32,7 @@ mysql> show tables;
 +-----------------------+
 1 row in set (0.00 sec)
 
-mysql> select * from employe
+mysql> select * from employe         -> extract the tables containing both coloumn and rows because we use *
     -> ;
 +--------+------------+-------------+----------------+
 | Name   | employe_ID | employe_age | employe_salary |
@@ -44,7 +44,7 @@ mysql> select * from employe
 +--------+------------+-------------+----------------+
 4 rows in set (0.00 sec)
 
-mysql> select employe_ID
+mysql> select employe_ID              -> to extract particular coloumn from the table
     -> from employe;
 +------------+
 | employe_ID |

@@ -1,3 +1,6 @@
+
+use of AND:-
+------------------------
 mysql> select * from employe;
 +--------+------------+-------------+----------------+
 | Name   | employe_ID | employe_age | employe_salary |
@@ -19,3 +22,29 @@ mysql> select Name
 | Deepak |
 +--------+
 1 row in set (0.00 sec)
+
+use of OR:-
+---------------------------
+
+mysql> select * from employe
+    -> where employe_ID = '1' OR employe_ID = '5';
++--------+------------+-------------+----------------+
+| Name   | employe_ID | employe_age | employe_salary |
++--------+------------+-------------+----------------+
+| Deepak |          1 |          21 |          21232 |
+| Deepak |          5 |          22 |          12000 |
++--------+------------+-------------+----------------+
+2 rows in set (0.00 sec)
+
+use of NOT in sql
+----------------------------
+
+mysql> select * from employe
+    -> where NOT employe_age='22';
++--------+------------+-------------+----------------+
+| Name   | employe_ID | employe_age | employe_salary |
++--------+------------+-------------+----------------+
+| Deepak |          1 |          21 |          21232 |
+| divyam |          4 |          23 |          23123 |
++--------+------------+-------------+----------------+
+2 rows in set (0.00 sec)

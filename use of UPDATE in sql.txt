@@ -10,12 +10,18 @@ mysql> select * from employe;
 +--------+------------+-------------+----------------+
 5 rows in set (0.00 sec)
 
-mysql> select Name
-    -> from employe
-    -> where employe_age = '21' AND employe_salary = '21232';
-+--------+
-| Name   |
-+--------+
-| Deepak |
-+--------+
-1 row in set (0.00 sec)
+mysql> update employe
+set employe_ID = '7',employe_age = '19',employe_salary = '120000'
+-> where Name = 'daman';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
++--------+------------+-------------+----------------+
+| Name   | employe_ID | employe_age | employe_salary |
++--------+------------+-------------+----------------+
+| Deepak |          1 |          21 |          21232 |
+| aditya |          2 |          22 |          12122 |
+| divyam |          4 |          23 |          23123 |
+| Deepak |          5 |          22 |          12000 |
+| daman  |          7 |          19 |         120000 |           <--
++--------+------------+-------------+----------------+
